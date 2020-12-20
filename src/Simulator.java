@@ -3,7 +3,7 @@ import java.io.*;
 public class Simulator {
 
     public static PrintWriter writer;
-    public static int cycles;
+    public static int times;
     public  static String[] splitLine;
     public static WeatherTower weatherTower = new WeatherTower();
 
@@ -15,8 +15,8 @@ public class Simulator {
             if (line != null)
             {
                 try {
-                    cycles = Integer.parseInt(line);
-                    if (cycles < 0)
+                    times = Integer.parseInt(line);
+                    if (times < 0)
                         throw new ValidationException("First line in scenario file must be positive number");
                     line = reader.readLine();
                 }
@@ -36,22 +36,31 @@ public class Simulator {
         }
     }
 
+    public static void parseCoordinates(String longitude, String latitude, String height, String line) throws ValidationException {
+        try {
+            int longi = Integer.parseInt(longitude);
+            int lat = Integer.parseInt(latitude);
+            int hei = Integer.parseInt(height);
+            if (longi < 0 || lat < 0 || hei < 0)
+                throw new ValidationException("Coordinates must be positive number");
+        }
+        catch (NumberFormatException e)
+        {
+            throw new ValidationException("3, 4, 5 params if line " + line + " must be integer number");
+        }
+    }
+    
     public static void createAircrafts(String line, BufferedReader reader) throws ValidationException, IOException {
         while (line != null)
         {
             splitLine = line.split(" ");
             if (splitLine.length != 5)
                 throw new ValidationException("Line " + line + " must have 'TYPE NAME LONGITUDE LATITUDE HEIGHT'");
-            line = reader.readLine();
             AircraftFactory aircraftFactory = new AircraftFactory();
-            try {
-                aircraftFactory.newAircraft(splitLine[0], splitLine[1], Integer.parseInt(splitLine[2]), Integer.parseInt(splitLine[3]), Integer.parseInt(splitLine[4]))
-                        .registerTower(weatherTower);
-            }
-            catch (NumberFormatException | IOException e)
-            {
-                throw new ValidationException("3, 4, 5 params if line " + line + " must be integer number");
-            }
+            parseCoordinates(splitLine[2], splitLine[3], splitLine[4], line);
+            aircraftFactory.newAircraft(splitLine[0], splitLine[1], Integer.parseInt(splitLine[2]), Integer.parseInt(splitLine[3]), Integer.parseInt(splitLine[4]))
+                    .registerTower(weatherTower);
+            line = reader.readLine();
         }
     }
 
@@ -69,10 +78,10 @@ public class Simulator {
         }
         readFile(scenarioFile);
 
-        while (cycles > 0)
+        for (int i = 0; i < times; i++)
         {
+            Simulator.writer.println("   Simulation time #" + (i + 1) + "   ");
             weatherTower.changeWeather();
-            cycles--;
         }
         writer.close();
     }

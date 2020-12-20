@@ -6,7 +6,6 @@ public class Coordinates {
 
     public Coordinates(int longitude, int latitude, int height)
     {
-        //may be exception
         if (longitude < 0)
             longitude = 0;
         if (latitude < 0)

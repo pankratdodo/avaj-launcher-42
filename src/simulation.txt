@@ -1,0 +1,164 @@
+Tower says: BaloonB1(0) registered to weather tower.
+Tower says: BaloonB2(0) registered to weather tower.
+Tower says: JetPlaneJ1(0) registered to weather tower.
+Tower says: HelicopterH1(0) registered to weather tower.
+Tower says: HelicopterH2(0) registered to weather tower.
+Tower says: HelicopterH3(0) registered to weather tower.
+Tower says: BaloonB3(0) registered to weather tower.
+Tower says: JetPlaneJ2(0) registered to weather tower.
+Tower says: HelicopterH4(0) registered to weather tower.
+   Simulation time #1   
+Baloon#B1(0): fog, i cant see
+Baloon#B2(0): snow, im falling
+JetPlane#J1(0): snow, im falling
+Helicopter#H1(0): snow, im falling
+Helicopter#H2(0): snow, im falling
+Helicopter#H3(0): fog, i cant see
+Baloon#B3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): rain is wet
+   Simulation time #2   
+Baloon#B1(0): sun is cool
+Baloon#B2(0): rain is wet
+JetPlane#J1(0): rain is wet
+Helicopter#H1(0): snow, im falling
+Helicopter#H1(0): landing
+Tower says: Helicopter#H1(0):  unregistered from weather tower.
+Helicopter#H3(0): sun is cool
+Baloon#B3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): fog, i cant see
+   Simulation time #3   
+Baloon#B1(0): rain is wet
+Baloon#B2(0): snow, im falling
+JetPlane#J1(0): fog, i cant see
+Helicopter#H2(0): snow, im falling
+Helicopter#H3(0): fog, i cant see
+Baloon#B3(0): snow, im falling
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #4   
+Baloon#B1(0): snow, im falling
+Baloon#B2(0): rain is wet
+JetPlane#J1(0): sun is cool
+Helicopter#H2(0): snow, im falling
+Helicopter#H3(0): sun is cool
+Baloon#B3(0): rain is wet
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #5   
+Baloon#B1(0): rain is wet
+Baloon#B1(0): landing
+Tower says: Baloon#B1(0):  unregistered from weather tower.
+JetPlane#J1(0): sun is cool
+Helicopter#H2(0): snow, im falling
+Helicopter#H2(0): landing
+Tower says: Helicopter#H2(0):  unregistered from weather tower.
+Baloon#B3(0): snow, im falling
+Baloon#B3(0): landing
+Tower says: Baloon#B3(0):  unregistered from weather tower.
+Helicopter#H4(0): sun is cool
+   Simulation time #6   
+Baloon#B2(0): snow, im falling
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #7   
+Baloon#B2(0): rain is wet
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #8   
+Baloon#B2(0): snow, im falling
+Baloon#B2(0): landing
+Tower says: Baloon#B2(0):  unregistered from weather tower.
+Helicopter#H3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #9   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #10   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #11   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #12   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #13   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #14   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #15   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #16   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #17   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #18   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #19   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #20   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #21   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #22   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
+   Simulation time #23   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): sun is cool
+JetPlane#J2(0): sun is cool
+Helicopter#H4(0): sun is cool
+   Simulation time #24   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): rain is wet
+JetPlane#J2(0): rain is wet
+Helicopter#H4(0): sun is cool
+   Simulation time #25   
+JetPlane#J1(0): sun is cool
+Helicopter#H3(0): fog, i cant see
+JetPlane#J2(0): fog, i cant see
+Helicopter#H4(0): sun is cool
