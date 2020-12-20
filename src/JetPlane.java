@@ -1,5 +1,3 @@
-import java.io.IOException;
-
 public class JetPlane extends Aircraft implements Flyable{
 
     private WeatherTower weatherTower;
@@ -15,36 +13,35 @@ public class JetPlane extends Aircraft implements Flyable{
         if (weatherNow.equalsIgnoreCase("sun"))
         {
             coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 10, coordinates.getHeight() + 2);
-            System.out.println("JetPlane#" + name + "(" + id + "): sun is cool");
+            Simulator.writer.println("JetPlane#" + name + "(" + id + "): sun is cool");
         }
         else if (weatherNow.equalsIgnoreCase("rain"))
         {
             coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 5, coordinates.getHeight());
-            System.out.println("JetPlane#" + name + "(" + id + "): rain is wet");
+            Simulator.writer.println("JetPlane#" + name + "(" + id + "): rain is wet");
         }
         else if (weatherNow.equalsIgnoreCase("fog"))
         {
             coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 1, coordinates.getHeight());
-            System.out.println("JetPlane#" + name + "(" + id + "): fog, i cant see");
+            Simulator.writer.println("JetPlane#" + name + "(" + id + "): fog, i cant see");
         }
         else if (weatherNow.equalsIgnoreCase("snow"))
         {
             coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 7);
-            System.out.println("JetPlane#" + name + "(" + id + "): snow, im falling");
+            Simulator.writer.println("JetPlane#" + name + "(" + id + "): snow, im falling");
         }
         if (coordinates.getHeight() == 0)
         {
-            System.out.println("JetPlane#" + name + "(" + id + "): landing");
+            Simulator.writer.println("JetPlane#" + name + "(" + id + "): landing");
             weatherTower.unregister(this);
-            System.out.println("Tower says: JetPlane#" + name + "(" + id + "):  unregistered from weather tower.");
+            Simulator.writer.println("Tower says: JetPlane#" + name + "(" + id + "):  unregistered from weather tower.");
         }
     }
 
     @Override
-    public void registerTower(WeatherTower weatherTower) {
+    public void registerTower(WeatherTower weatherTower){
         this.weatherTower = weatherTower;
         this.weatherTower.register(this);
-        Simulator.writer.append("Tower says: JetPlane" + this.name + "(" + this.id + ") registered to weather tower.");
-        //        System.out.println("Tower says: JetPlane" + this.name + "(" + this.id + ") registered to weather tower.");
+        Simulator.writer.println("Tower says: JetPlane" + this.name + "(" + this.id + ") registered to weather tower.");
     }
 }
