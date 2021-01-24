@@ -1,3 +1,5 @@
+package aircraft;
+
 public class Coordinates {
 
     private int longitude;

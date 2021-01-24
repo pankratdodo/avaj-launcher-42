@@ -1,3 +1,7 @@
+package simulator;
+
+import aircraft.Flyable;
+
 import java.util.LinkedList;
 import java.util.List;
 

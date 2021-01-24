@@ -1,3 +1,5 @@
+package aircraft;
+
 public class Aircraft {
 
     protected long id;

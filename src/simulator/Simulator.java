@@ -1,3 +1,8 @@
+package simulator;
+
+import aircraft.AircraftFactory;
+import exception.ValidationException;
+
 import java.io.*;
 
 public class Simulator {
@@ -80,7 +85,7 @@ public class Simulator {
 
         for (int i = 0; i < times; i++)
         {
-            Simulator.writer.println("   Simulation time #" + (i + 1) + "   ");
+            Simulator.writer.println("------------Simulation time #" + (i + 1) + "--------------");
             weatherTower.changeWeather();
         }
         writer.close();

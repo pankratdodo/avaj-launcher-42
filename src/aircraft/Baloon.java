@@ -1,4 +1,9 @@
-public class Baloon extends Aircraft implements Flyable{
+package aircraft;
+
+import simulator.Simulator;
+import simulator.WeatherTower;
+
+public class Baloon extends Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
 
