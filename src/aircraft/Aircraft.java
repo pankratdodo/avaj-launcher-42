@@ -6,7 +6,7 @@ public class Aircraft {
     protected String name;
     protected Coordinates coordinates;
 
-    private long idCounter = 0;
+    private static long idCounter = 0;
 
     protected Aircraft(String name, Coordinates coordinates)
     {
@@ -17,6 +17,6 @@ public class Aircraft {
 
     private long nextId()
     {
-        return idCounter++;
+        return Aircraft.idCounter++;
     }
 }

@@ -35,7 +35,7 @@ public class Simulator {
             createAircrafts(line, reader);
             reader.close();
         }
-        catch (FileNotFoundException | ValidationException e)
+        catch (FileNotFoundException e)
         {
             throw new ValidationException("Scenario file is incorrect");
         }
