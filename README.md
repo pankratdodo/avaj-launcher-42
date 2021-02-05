@@ -1,6 +1,6 @@
 # avaj-launcher
 Since the software will run on a multitude of operating systems in a very strict enterprise environement, he decides to use a classic Object-Oriented language: Java.
-## Installation
+## Installation and run
 1. Download/Clone this repo
 ```
 git clone https://github.com/pankratdodo/avaj-launcher-42.git
